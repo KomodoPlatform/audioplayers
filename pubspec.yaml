@@ -18,7 +18,10 @@ flutter:
         fileName: audioplayers_web.dart
 
 dependencies:
-  uuid: ^2.0.4
+  uuid: # 2.0.4 - TODO: diff 1b7db8f (2.0.1) 981adca (2.0.4)
+    git: 
+      url: git://github.com/KomodoPlatform/dart-uuid.git
+      ref: 981adcac181443e3def4ced76a43b96c534e68ce
   path_provider: ^1.5.1
   flutter:
     sdk: flutter
