@@ -3,6 +3,9 @@ description: A Flutter plugin to play multiple audio files simultaneously
 version: 0.20.0
 homepage: https://github.com/luanpotter/audioplayers
 
+# Publishable packages can't have 'git' dependencies.
+publish_to: none
+
 flutter:
   plugin:
     platforms:
@@ -18,7 +21,10 @@ flutter:
         fileName: web/audioplayers_web.dart
 
 dependencies:
-  uuid: ^3.0.1
+  uuid:
+    git:
+      url: https://github.com/KomodoPlatform/dart-uuid.git
+      ref: c9a37bc675fd3fa715db2d929dc66d15ec09ad27
   path_provider: ^2.0.1
   http: ^0.13.1
   flutter:
